@@ -1,13 +1,6 @@
 # 数据结构要形成一个整体是面向对象的概念
 
 # 节点实现
-"""
-c中*代表地址，python中没有特殊的变量代表地址。so...
-python中交换两个变量（只有python中是这样的）。
-a = 10
-b = 20
-a,b = b,a # 最终改变的是a,b的指向，ab仅仅是名字。在python中一切皆对象。
-"""
 class Node(object):
     """节点"""
     # 构造函数
@@ -80,9 +73,9 @@ class SingleLinkList(object):
                 count+=1
                 pre=pre.next
             # 当循环退出后，pre指向pos-1的位置
-            node=Node(item)
-            node.next=pre.next
-            pre.next=node
+            node = Node(item)
+            node.next = pre.next
+            pre.next = node
 
     def remove(self,item):
         """删除节点"""
@@ -105,7 +98,7 @@ class SingleLinkList(object):
         """查找节点"""
         cur = self.__head
         while cur != Node:
-            if cur.elem==item:
+            if cur.elem == item:
                 return True
             else:
                 cur = cur.next

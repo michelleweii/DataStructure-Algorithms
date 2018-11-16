@@ -1,6 +1,13 @@
 # 数据结构要形成一个整体是面向对象的概念
 
 # 节点实现
+"""
+c中*代表地址，python中没有特殊的变量代表地址。so...
+python中交换两个变量（只有python中是这样的）。
+a = 10
+b = 20
+a,b = b,a # 最终改变的是a,b的指向，ab仅仅是名字。在python中一切皆对象。
+"""
 class Node(object):
     """节点"""
     # 构造函数
@@ -9,12 +16,15 @@ class Node(object):
         self.next = None
 
 
-class SingleLinkList(object):
-    """单链表"""
+class SingleCycleLinkList(object):
+    """单向循环链表"""
     def __init__(self, node = None):
         # 对外来说，不需要知道头结点这个属性，
         # 内部使用，不暴露所以要私有化
         self.__head = node
+        if node:
+            # 如果链表不为空
+            node.next=node
 
     def is_empty(self):
         """链表是否为空"""
@@ -23,28 +33,43 @@ class SingleLinkList(object):
     def length(self):
         """遍历整个链表"""
         # cur游标，用来移动遍历节点
+        if self.is_empty(): # 空链表
+            return 0
         cur = self.__head
         # count记录数量
-        count = 0
-        while cur!=None:
-            count+=1
+        count = 1
+        while cur.next != self.__head: # 只有一个节点也满足
+            count += 1
             cur = cur.next
         return count
 
     def travel(self):
         """遍历整个链表"""
+        if self.is_empty():
+            return
         cur = self.__head
-        while cur != None:
+        while cur.next != self.__head:
             # if: cur.next!=None,会丢掉最后一个元素。
             print(cur.elem, end=' ')
             cur = cur.next
-        print("")
+        # 退出循环，cur指向尾节点，但尾节点的元素未打印
+        print(cur.elem)
 
     def add(self,item):
         """链表头部添加元素, 头插法"""
-        node=Node(item)
-        node.next=self.__head
-        self.__head=node
+        node = Node(item)
+        if self.is_empty():
+            self.__head = node
+            node.next = node
+        else:
+            cur = self.__head
+            while cur.next != self.__head:
+                cur = cur.next
+            # 退出循环，cur指向尾节点
+            node.next = self.__head
+            self.__head=node
+            # cur.next = node
+            cur.next = self.__head
 
 
     def append(self,item):
@@ -52,11 +77,16 @@ class SingleLinkList(object):
         node = Node(item)
         if self.is_empty():
             self.__head = node
+            node.next=node
         else:
             cur = self.__head
-            while cur.next != None:
+            while cur.next != self.__head:
                 cur = cur.next
             cur.next = node
+            node.next = self.__head
+            # or
+            # node.next = cur.next
+            # cur.next = node
 
     def insert(self,pos,item):
         """指定位置添加元素
@@ -79,35 +109,56 @@ class SingleLinkList(object):
 
     def remove(self,item):
         """删除节点"""
+        if self.is_empty():
+            return
         cur = self.__head
         pre = Node
-        while cur != Node:
+        while cur.next != self.__head:
             if cur.elem == item:
                 # 先判断此节点是否是头结点
-                # 头结点
+                # 删除头节点，需要更改尾节点的next域
                 if cur == self.__head:
+                    # 头结点
+                    # 找尾节点
+                    rear = self.__head
+                    while rear.next != self.__head:
+                        rear=rear.next
+                    # rear指向尾节点
                     self.__head = cur.next
+                    rear.next = self.__head
                 else:
+                    # 中间位置
                     pre.next = cur.next
-                break
+                return
             else:
                 pre = cur
                 cur = cur.next
+        # 退出循环，cur指向尾节点
+        if cur.elem == item:
+            if cur == self.__head:
+                # 链表只有一个节点
+                self.__head = Node
+            pre.next = cur.next
 
     def search(self,item):
         """查找节点"""
+        if self.is_empty():
+            return False
         cur = self.__head
-        while cur != Node:
-            if cur.elem==item:
+        while cur.next != self.__head: # 会丢掉最后一个元素
+            if cur.elem == item:
                 return True
             else:
                 cur = cur.next
+        # 退出循环，cur指向尾节点
+        if cur.elem == item:
+            return True
         return False
 
 
 
 if __name__=="__main__":
-    ll= SingleLinkList()
+    ll= SingleCycleLinkList()
     print(ll.is_empty())
     print(ll.length())
     ll.append(1)
@@ -119,6 +170,7 @@ if __name__=="__main__":
     ll.append(4)
     ll.append(5)
     ll.add(8) # 8 1 2 3 4 5
+    ll.travel()
     ll.insert(-1,9) # 9 8 1 2 3 4 5
     ll.travel()
     ll.insert(2,100) # 9 8 100 1 2 3 4 5
