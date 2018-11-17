@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e61642b-fb9c-4619-b883-1f8b49fd0e11" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/4-3.双向链表.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5-1.排序与搜索.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.栈.py" beforeDir="false" afterPath="$PROJECT_DIR$/3-1.栈.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.队列.py" beforeDir="false" afterPath="$PROJECT_DIR$/3-2.队列.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4-2.单向循环链表.py" beforeDir="false" afterPath="$PROJECT_DIR$/4-2.单向循环链表.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.链表.py" beforeDir="false" afterPath="$PROJECT_DIR$/4-1.单链表.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.排序与搜索.py" beforeDir="false" afterPath="$PROJECT_DIR$/5-2.搜索.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/6.树与二叉树.py" beforeDir="false" afterPath="$PROJECT_DIR$/6.树与二叉树.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,62 +17,48 @@
     <session id="397437219">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="11" />
+          <entry key="py" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="11" />
+          <entry key="Python" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="25" />
-          <entry key="py" value="4930" />
+          <entry key="dummy" value="27" />
+          <entry key="py" value="6961" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="25" />
-          <entry key="Python" value="4930" />
+          <entry key="PLAIN_TEXT" value="27" />
+          <entry key="Python" value="6961" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/4-3.双向链表.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="113" column="27" selection-start-line="113" selection-start-column="27" selection-end-line="113" selection-end-column="27" />
-              <folding>
-                <marker date="1542264235564" expanded="true" signature="62:67" ph="..." />
-                <marker date="1542264235564" expanded="true" signature="210:211" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/6.树与二叉树.py">
+        <entry file="file://$PROJECT_DIR$/5-1.排序与搜索.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="207">
+              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
               <folding>
-                <marker date="1542334997328" expanded="true" signature="35:40" ph="..." />
-                <marker date="1542334997328" expanded="true" signature="164:169" ph="..." />
-                <marker date="1542334997328" expanded="true" signature="340:351" ph="..." />
+                <marker date="1542428436148" expanded="true" signature="57:62" ph="..." />
               </folding>
             </state>
           </provider>
@@ -104,6 +87,8 @@
         <option value="$PROJECT_DIR$/4-2.单向循环链表.py" />
         <option value="$PROJECT_DIR$/4-3.双向链表.py" />
         <option value="$PROJECT_DIR$/6.树与二叉树.py" />
+        <option value="$PROJECT_DIR$/5.排序与搜索.py" />
+        <option value="$PROJECT_DIR$/5-2.搜索.py" />
       </list>
     </option>
   </component>
@@ -118,7 +103,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -130,6 +114,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -149,49 +134,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.4-3.双向链表">
-    <configuration name="1.数据结构与算法基础" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="DataStructure_Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1.数据结构与算法基础.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="3.栈与队列" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="DataStructure_Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/3-1.栈.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.5.排序与搜索">
     <configuration name="3.队列" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DataStructure_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -276,20 +219,62 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="5.排序与搜索" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DataStructure_Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/5-1.排序与搜索.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="6.树与二叉树" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DataStructure_Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/6.树与二叉树.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.1.数据结构与算法基础" />
-      <item itemvalue="Python.3.栈与队列" />
       <item itemvalue="Python.4.链表" />
       <item itemvalue="Python.4-2.单向循环链表" />
       <item itemvalue="Python.4-3.双向链表" />
+      <item itemvalue="Python.6.树与二叉树" />
+      <item itemvalue="Python.5.排序与搜索" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.5.排序与搜索" />
+        <item itemvalue="Python.6.树与二叉树" />
         <item itemvalue="Python.4-3.双向链表" />
         <item itemvalue="Python.4.链表" />
         <item itemvalue="Python.4-2.单向循环链表" />
-        <item itemvalue="Python.3.栈与队列" />
-        <item itemvalue="Python.1.数据结构与算法基础" />
       </list>
     </recent_temporary>
   </component>
@@ -307,22 +292,22 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="49" y="23" width="1366" height="877" extended-state="0" />
+    <frame x="53" y="23" width="1366" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24981412" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24981412" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33248407" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49888477" visible="true" weight="0.33248407" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="9" side_tool="true" visible="true" weight="0.3299363" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50111526" side_tool="true" visible="true" weight="0.33248407" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -368,9 +353,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/6.树与二叉树.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="55" column="27" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
+          <folding>
+            <marker date="1542354066164" expanded="true" signature="52:57" ph="..." />
+            <marker date="1542354066164" expanded="true" signature="181:186" ph="..." />
+            <marker date="1542354066164" expanded="true" signature="897:906" ph="..." />
+            <marker date="1542354066164" expanded="true" signature="1326:1507" ph="..." />
+            <marker date="1542354066164" expanded="true" signature="1859:1860" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5-2.搜索.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/4-3.双向链表.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
+        <state relative-caret-position="441">
           <caret line="113" column="27" selection-start-line="113" selection-start-column="27" selection-end-line="113" selection-end-column="27" />
           <folding>
             <marker date="1542264235564" expanded="true" signature="62:67" ph="..." />
@@ -379,14 +381,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/6.树与二叉树.py">
+    <entry file="file://$PROJECT_DIR$/5-1.排序与搜索.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="207">
+          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
           <folding>
-            <marker date="1542334997328" expanded="true" signature="35:40" ph="..." />
-            <marker date="1542334997328" expanded="true" signature="164:169" ph="..." />
-            <marker date="1542334997328" expanded="true" signature="340:351" ph="..." />
+            <marker date="1542428436148" expanded="true" signature="57:62" ph="..." />
           </folding>
         </state>
       </provider>
