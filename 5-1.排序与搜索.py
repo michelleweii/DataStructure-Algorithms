@@ -56,9 +56,44 @@ def insert_sort(alist):
             else: # 优化 O(n)
                 break
 
-# 希尔排序
+# 希尔排序__插入算法的改进版本gap=1时
+def shell_sort(alist):
+    n = len(alist)
+    gap = n // 2 # 起始从gap开始的
+    # 4，2，1 或者9，6，1，如何达到最优？ 数学知识，不做研究
+    # gap 变化到0之前，插入算法的执行次数
+    while gap >= 1:
+        # 希尔与普通的插入算法的区别就是gap步长
+        for j in range(gap,n):
+            # 所有子序列的所有元素
+            i = j
+            while i > 0:
+                # 内循环执行的是：插入算法的比较和交换
+                if alist[i] < alist[i-gap]:
+                    alist[i], alist[i - gap] = alist[i - gap], alist[i]
+                    i -= gap
+                else:
+                    break
+        # 缩短gap步长
+        gap //= 2
+
+
+
+
 
 # 快速排序
+def quick_sort(alist):
+    """快速排序"""
+    mid_value = alist[0]
+    n=len(alist)
+    low=0
+    high=n-1
+    while low<high:
+        if alist[high]>mid_value:
+            high-=1
+        alist[0]=alist[high]
+
+
 
 # 归并排序
 
@@ -71,5 +106,6 @@ if __name__ == '__main__':
     li = [64,21,22,9,5]
     # bubble_sort(li)
     # select_sort(li)
-    insert_sort(li )
+    # insert_sort(li)
+    shell_sort(li)
     print(li)
