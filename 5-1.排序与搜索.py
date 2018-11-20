@@ -78,27 +78,70 @@ def shell_sort(alist):
         gap //= 2
 
 
-
-
-
 # 快速排序
-def quick_sort(alist):
+def quick_sort(alist, first, last):
     """快速排序"""
-    mid_value = alist[0]
-    n=len(alist)
-    low=0
-    high=n-1
-    while low<high:
-        if alist[high]>mid_value:
-            high-=1
-        alist[0]=alist[high]
+    if first >= last:
+        # 传进来只有一个元素时
+        return
+    mid_value = alist[first]
+    low = first
+    high = last
+    while low < high:
+        # high 左移
+        while low<high and alist[high] >= mid_value:
+            high -= 1
+        alist[low] = alist[high]
 
+        while low<high and alist[low]<mid_value:
+            low+=1
+        alist[high]=alist[low]
+
+    # 从循环退出时，low==high
+    alist[low]=mid_value
+
+    # 对low左边的列表执行快速排序
+    quick_sort(alist,first,low-1)
+    # 对low右边的列表执行快速排序
+    quick_sort(alist,low+1,last)
 
 
 # 归并排序
+# 快速排序是在本身的基础上进行操作的，归并排序是在已拆分的list上做操作
 
+def merge_sort(alist):
+    """归并排序"""
+    n = len(alist)
+    if n <= 1:
+        # 将列表拆分成最后1个1个的时候，只要返回1个元素，1个元素就好
+        return alist
+    mid = n//2
 
+    # left 采用归并排序后形成的有序的新的列表
+    left_li = merge_sort(alist[:mid])
+    # right 采用归并排序后形成的有序的新的列表
+    right_li = merge_sort(alist[mid:])
 
+    # 将两个有序的子序列合并为一个新的整体
+    # merge(left,right)
+    left_pointer,right_pointer = 0,0
+    result = []
+
+    while left_pointer<len(left_li) and right_pointer<len(right_li):
+        # left_pointer,right_pointer都指在当前这一半中的第一个元素
+        if left_li[left_pointer] < right_li[right_pointer]:
+            # 合并的时候，哪个元素小，就将哪个元素追加到合并的list中
+            result.append(left_li[left_pointer])
+            left_pointer += 1
+        else:
+            result.append(right_li[right_pointer])
+            right_pointer += 1
+
+    # 退出循环时，代表left_pointer, right_pointer有一个走到当前list的末尾，
+    # 但另一个没走到末尾，需要整体追加到合并后的元素中
+    result += left_li[left_pointer:]
+    result += right_li[right_pointer:]
+    return result
 
 
 
@@ -107,5 +150,7 @@ if __name__ == '__main__':
     # bubble_sort(li)
     # select_sort(li)
     # insert_sort(li)
-    shell_sort(li)
-    print(li)
+    # shell_sort(li)
+    # quick_sort(li,0,len(li)-1)
+    print(merge_sort(li)) # [5, 9, 21, 22, 64]
+    print(li) # [64, 21, 22, 9, 5]，归并的时候这种结果
