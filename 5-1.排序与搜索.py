@@ -143,7 +143,8 @@ def merge_sort(alist):
     result += right_li[right_pointer:]
     return result
 
-
+# 归并排序，拆分不消耗时间复杂度
+# 在合并的时候，由于有元素的比较，然后横向合并时，每一次都是n次；
 
 if __name__ == '__main__':
     li = [64,21,22,9,5]
