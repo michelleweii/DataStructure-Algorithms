@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e61642b-fb9c-4619-b883-1f8b49fd0e11" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/4-1.单链表.py" beforeDir="false" afterPath="$PROJECT_DIR$/4-1.单链表.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-1.排序与搜索.py" beforeDir="false" afterPath="$PROJECT_DIR$/5-1.排序与搜索.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,49 +25,54 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="17" />
+          <entry key="py" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="17" />
+          <entry key="Python" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="27" />
-          <entry key="py" value="9170" />
+          <entry key="py" value="9471" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="27" />
-          <entry key="Python" value="9170" />
+          <entry key="Python" value="9471" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/5-1.排序与搜索.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/4-1.单链表.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="843">
-              <caret line="147" lean-forward="true" selection-start-line="147" selection-end-line="147" />
+            <state relative-caret-position="435">
+              <caret line="118" selection-start-line="118" selection-end-line="118" />
               <folding>
-                <marker date="1542862651076" expanded="true" signature="57:62" ph="..." />
-                <marker date="1542862651076" expanded="true" signature="1511:2043" ph="..." />
-                <marker date="1542862651076" expanded="true" signature="2085:2631" ph="..." />
+                <marker date="1543308222456" expanded="true" signature="2472:2925" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/4-1.单链表.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/6.树与二叉树.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2358">
-              <caret line="131" column="55" selection-start-line="131" selection-start-column="55" selection-end-line="131" selection-end-column="55" />
+            <state relative-caret-position="1134">
+              <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+              <folding>
+                <marker date="1542354066164" expanded="true" signature="52:57" ph="..." />
+                <marker date="1542354066164" expanded="true" signature="181:186" ph="..." />
+                <marker date="1542354066164" expanded="true" signature="897:906" ph="..." />
+                <marker date="1542354066164" expanded="true" signature="1326:1507" ph="..." />
+                <marker date="1542354066164" expanded="true" signature="1859:1860" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -104,8 +107,8 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-188" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="493" />
     <option name="y" value="23" />
     <option name="width" value="1366" />
     <option name="height" value="877" />
@@ -146,7 +149,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.4-1.单链表">
+  <component name="RunManager" selected="Python.6.树与二叉树">
     <configuration name="4-1.单链表" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DataStructure_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -261,11 +264,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.6.树与二叉树" />
         <item itemvalue="Python.4-1.单链表" />
         <item itemvalue="Python.5-2.搜索" />
         <item itemvalue="Python.5.排序与搜索" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.6.树与二叉树" />
       </list>
     </recent_temporary>
   </component>
@@ -283,7 +286,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="57" y="23" width="1366" height="877" extended-state="1" />
+    <frame x="493" y="23" width="1366" height="877" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24981412" />
@@ -291,14 +294,14 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.6490706" visible="true" weight="0.25859872" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.6490706" visible="true" weight="0.26369426" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.35092938" side_tool="true" visible="true" weight="0.25859872" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.35092938" side_tool="true" visible="true" weight="0.26369426" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -337,20 +340,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/6.树与二叉树.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="55" column="27" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
-          <folding>
-            <marker date="1542354066164" expanded="true" signature="52:57" ph="..." />
-            <marker date="1542354066164" expanded="true" signature="181:186" ph="..." />
-            <marker date="1542354066164" expanded="true" signature="897:906" ph="..." />
-            <marker date="1542354066164" expanded="true" signature="1326:1507" ph="..." />
-            <marker date="1542354066164" expanded="true" signature="1859:1860" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/4-3.双向链表.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
@@ -376,13 +365,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/4-1.单链表.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2358">
-          <caret line="131" column="55" selection-start-line="131" selection-start-column="55" selection-end-line="131" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/5-1.排序与搜索.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="843">
@@ -391,6 +373,30 @@
             <marker date="1542862651076" expanded="true" signature="57:62" ph="..." />
             <marker date="1542862651076" expanded="true" signature="1511:2043" ph="..." />
             <marker date="1542862651076" expanded="true" signature="2085:2631" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-1.单链表.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
+          <folding>
+            <marker date="1543308222456" expanded="true" signature="2472:2925" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/6.树与二叉树.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1134">
+          <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+          <folding>
+            <marker date="1542354066164" expanded="true" signature="52:57" ph="..." />
+            <marker date="1542354066164" expanded="true" signature="181:186" ph="..." />
+            <marker date="1542354066164" expanded="true" signature="897:906" ph="..." />
+            <marker date="1542354066164" expanded="true" signature="1326:1507" ph="..." />
+            <marker date="1542354066164" expanded="true" signature="1859:1860" ph="..." />
           </folding>
         </state>
       </provider>

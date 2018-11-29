@@ -80,23 +80,42 @@ class SingleLinkList(object):
             node.next = pre.next
             pre.next = node
 
+    # def remove(self, item):
+    #     # 这个代码存——只能删除出现一次的
+    #     # 9 8 100 1 2 3 4 9 5 9
+    #     # 8 100 1 2 3 4 9 5 9
+    #     """删除节点"""
+    #     cur = self.__head
+    #     # pre指向cur前面的位置
+    #     pre = Node
+    #     while cur != None:
+    #         if cur.elem == item:
+    #             # 先判断此节点是否是头结点
+    #             # 头结点
+    #             if cur == self.__head:
+    #                 self.__head = cur.next
+    #             else:
+    #                 pre.next = cur.next
+    #             break
+    #         else:
+    #             pre = cur
+    #             cur = cur.next
+
     def remove(self, item):
-        """删除节点"""
-        cur = self.__head
-        # pre指向cur前面的位置
-        pre = Node
-        while cur != None:
-            if cur.elem == item:
-                # 先判断此节点是否是头结点
-                # 头结点
-                if cur == self.__head:
-                    self.__head = cur.next
-                else:
+        if self.__head:
+            while self.__head.elem == item:
+                self.__head = self.__head.next
+                if self.__head is None:
+                    return self.__head
+            pre = self.__head
+            cur = pre.next
+            while cur != None:
+                if cur.elem ==item:
                     pre.next = cur.next
-                break
-            else:
-                pre = cur
+                else:
+                    pre = pre.next
                 cur = cur.next
+
 
     def search(self,item):
         """查找节点"""
@@ -121,6 +140,7 @@ if __name__=="__main__":
     ll.append(2)
     ll.append(3)
     ll.append(4)
+    ll.append(9)
     ll.append(5)
     ll.add(8) # 8 1 2 3 4 5
     ll.insert(-1,9) # 9 8 1 2 3 4 5
